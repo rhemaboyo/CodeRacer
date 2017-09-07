@@ -1,4 +1,4 @@
-## Sample JS Project Proposal: Conway's Game of Life with Variations
+## CodeRacer Proposal
 
 ### Background
 
@@ -25,7 +25,7 @@ In addition, this project will include:
 
 CodeRacer will contain landing page where a user will be able to choose their settings and a page that displays the race and ensuing results.
 
-![wireframes](https://github.com/appacademy/ny-portfolio-curriculum/blob/master/javascript-project/js-proposal-wireframe.jpg)
+![wireframes](https://github.com/rhemaboyo/CodeRacer/blob/master/CODERACER%20WIREFRAME.JPG)
 
 ### Architecture and Technologies
 

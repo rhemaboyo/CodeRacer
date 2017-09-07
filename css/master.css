@@ -1,0 +1,33 @@
+body {
+  width: 100%;
+  text-align: center;
+}
+
+#race-track {
+  border: 1px solid black;
+  display: inline;
+}
+
+#audi {
+  display: none;
+}
+
+.snippet-continer {
+  width: 100%;
+  text-align: center;
+}
+
+#snippet {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+  font-family: 'Ubuntu Mono', monospace;
+  line-height: 1.3em;
+  font-size: 14px;
+}
+
+.highlight {
+  background-color: #38cf1a;
+  color: white;
+  margin: 1px;
+}
