@@ -1,11 +1,15 @@
 body {
   width: 100%;
   text-align: center;
+  background-color: black;
+  background-image:url('../images/matrix.gif');
 }
 
 #race-track {
-  border: 1px solid black;
+  border: none;
   display: inline;
+  position: absolute;
+  top: 3%;
 }
 
 #audi {
@@ -17,6 +21,13 @@ body {
   text-align: center;
 }
 
+.title {
+  font-size: 80px;
+  font-family: 'Ubuntu Mono', monospace;
+  color: #06f106;
+  text-shadow: 1px 1px 0px white;
+}
+
 #snippet {
   margin: 0 auto;
   text-align: left;
@@ -24,10 +35,31 @@ body {
   font-family: 'Ubuntu Mono', monospace;
   line-height: 1.3em;
   font-size: 14px;
+  position: absolute;
+  top: 10%;
+  font-size: 20px;
+}
+
+#snippet span {
+  color: #06f106;
 }
 
 .highlight {
-  background-color: #38cf1a;
+  background-color: white;
+  color: black !important;
+  margin: 1px;
+}
+
+.badlight {
+  background-color: #e63d3d;
   color: white;
   margin: 1px;
+}
+
+.terminal-container {
+  width: 1280px;
+  height: 640px;
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
 }
