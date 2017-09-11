@@ -36,7 +36,7 @@ body {
   line-height: 1.3em;
   font-size: 14px;
   position: absolute;
-  top: 10%;
+  top: 20%;
   font-size: 20px;
 }
 
@@ -62,4 +62,25 @@ body {
   display: inline-flex;
   position: relative;
   justify-content: center;
+}
+
+#start {
+  color: #06f106;
+  background-color: black;
+  border-radius: 5px;
+  border-color: #06f106;
+  border-style: solid;
+  font-size: 200px;
+  margin: 50px;
+  border-width: 10px;
+}
+
+#start:hover {
+  cursor: pointer;
+}
+
+.countdown {
+  font-size: 400px;
+  margin-top: 150px;
+  color: #06f106;
 }
