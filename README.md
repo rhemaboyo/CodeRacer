@@ -16,11 +16,29 @@ CodeRacer is built in JavaScript using HTML5's Canvas API for animation.
 
 The progress of the race is handled through the JavaScript DOM EventListener for keypresses.
 
-```JavaScript
-document.addEventListener("keydown", this.handleRace);
-```
-
 Every time a valid key is pressed the position of the image in canvas is redrawn and the cursor progresses depending on whether an error has been made or not.
+
+```JavaScript
+//game.js
+document.addEventListener("keydown", this.handleRace);
+
+handleRace(e) {
+  if (this.target === this.chars.length - 1) this.endGame(new Date());
+  if (e.key !== "Dead") e.preventDefault();
+  if (IGNORE_KEYS[e.key]) return;
+  this.typedKeys += 1;
+  if (this.numErrors === 0 && (e.key === this.chars[this.target].innerHTML) ||
+      (e.key === 'Enter' && this.chars[this.target].innerHTML.length > 1)) {
+    this.advanceCursor();
+    this.posY -= this.increment;
+    this.render();
+  } else if (e.key === 'Backspace') {
+    this.handleBackSpace();
+  } else {
+    this.handleErrors();
+  }
+}
+```
 
 The Computer Player's speed is set randomly at the start of the race, and the position of the computer player is set asynchronously to match the computer's word per minute speed.
 
@@ -32,11 +50,7 @@ compStart() {
       clearInterval(interval);
     }
     this.compY -= this.increment;
-    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    this.ctx.drawImage(this.comp, this.compX, this.compY,
-                       this.comp.width/4, this.comp.height/4);
-    this.ctx.drawImage(this.car, this.posX, this.posY,
-                       this.car.width/4, this.car.height/4);
+    this.render();
   };
   const interval = setInterval(run, 12000 / wpm);
 }
