@@ -70,9 +70,11 @@ body {
   border-radius: 5px;
   border-color: #06f106;
   border-style: solid;
-  font-size: 200px;
-  margin: 50px;
-  border-width: 10px;
+  font-size: 100px;
+  margin-top: 40px;
+  border: 8px solid;
+  position: absolute;
+  left: 31%;
 }
 
 #start:hover {
@@ -83,4 +85,9 @@ body {
   font-size: 400px;
   margin-top: 150px;
   color: #06f106;
+}
+
+.intro {
+  color: white;
+  text-align: center;
 }
