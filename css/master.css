@@ -12,11 +12,11 @@ body {
   top: 3%;
 }
 
-#audi, #viper {
+.hidden {
   display: none;
 }
 
-.snippet-continer {
+#snippet-continer {
   width: 100%;
   text-align: center;
 }
@@ -37,11 +37,16 @@ body {
   font-size: 14px;
   position: absolute;
   top: 20%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #snippet span {
   color: #06f106;
+}
+
+#snippet div {
+  color: #06f106;
+  display: block;
 }
 
 .highlight {
@@ -74,7 +79,7 @@ body {
   margin-top: 40px;
   border: 8px solid;
   position: absolute;
-  left: 31%;
+  left: 30%;
 }
 
 #start:hover {
@@ -90,4 +95,21 @@ body {
 .intro {
   color: white;
   text-align: center;
+}
+
+#restart {
+  color: #06f106;
+  background-color: black;
+  border-radius: 5px;
+  border-color: #06f106;
+  border-style: solid;
+  font-size: 100px;
+  margin-top: 40px;
+  border: 8px solid;
+  /*display: block;*/
+  /*left: 30%;*/
+}
+
+#restart:hover {
+  cursor: pointer;
 }
