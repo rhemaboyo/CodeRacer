@@ -1,6 +1,6 @@
 # CodeRacer #
 
-[CodeRacer Live! ](http://rhemaboyo.com/CodeRacer/)
+[CodeRacer Live! ](http://rhemaboyo.github.io/CodeRacer/)
 
 All coders are typers, and many new developers struggle with typing some of the underutilized keys, in the everyday world, that are common to programming. That's why I decided to make CodeRacer. It's a fun way to teach yourself touch typing, while racing against other players.
 
